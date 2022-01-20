@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --font-padrao: Arial, sans-serif, cursive; 
+    --font1:'Courgette';
+    --font2:'Lobster';
+}
+
+html, body{
+    font-family: var(--font-padrao);
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 7vw ;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+header  a, footer  a{
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font1);
+    font-size: 3.1vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    color: black;
+    background-color: white;
+}
+
+section.especial{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.404);
+    text-shadow: 1px 2px 0px black;
+    box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.726);
+    background-size: cover;
+    background-attachment: fixed;
+}
+    
+
+section.especial > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 5px;
+    
+    
+}
+
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
